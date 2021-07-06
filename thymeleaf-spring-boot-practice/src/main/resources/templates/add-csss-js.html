@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>add css js to thymeleaf</title>
+    <link th:href="@{/CSS/main.css}" rel="stylesheet">
+    <script type="text/javascript" th:src="@{/js/actions.js}"></script>
+</head>
+<body>
+<h2>alifffff</h2>
+<p>lorem ipsm dolor sit Lorem <strong> ipsum dolor sit amet,</strong> consectetur adipisicing elit. Maiores, quas?</p>
+<button type="button" th:onclick="demo()" >click to see the alert</button>
+</body>
+</html>

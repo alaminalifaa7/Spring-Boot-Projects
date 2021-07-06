@@ -10,16 +10,17 @@ import java.time.Month;
 import java.util.List;
 
 @RestController
-@RequestMapping(path="api/v1/student")
+@RequestMapping(path = "api/v1/student")
 public class StudentController {
     private final StudentService studentService;
+
     @Autowired
-    public StudentController(StudentService studentService){
-        this.studentService=studentService;
+    public StudentController(StudentService studentService) {
+        this.studentService = studentService;
     }
 
     @GetMapping
-    public List<Student> getStudents(){
+    public List<Student> getStudents() {
         return studentService.getStudents();
     }
 

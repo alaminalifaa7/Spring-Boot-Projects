@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f2162b2-345a-4d4a-ba3b-6f84b9ff034c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/student/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1utHAuSJgkdHhltunPGSwXaCIPQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thymeleaf-spring-boot-practice" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="D:/Spring-Boot-Projects/demo/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/demo/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.D:/Spring-Boot-Projects/demo/build.gradle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f2162b2-345a-4d4a-ba3b-6f84b9ff034c" name="Default Changelist" comment="" />
+      <created>1625477824307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625477824307</updated>
+      <workItem from="1625477831167" duration="851000" />
+      <workItem from="1625478701401" duration="348000" />
+      <workItem from="1625479066015" duration="1079000" />
+      <workItem from="1625480208102" duration="176000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="817" y="382" key="#Notifications" timestamp="1625478911693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="817" y="382" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1625478911693" />
+    <state x="1201" y="274" key="FileChooserDialogImpl" timestamp="1625480228449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1201" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625480228449" />
+    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1625480154612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625480154612" />
+    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1625480154612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625480154612" />
+    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1625480154612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625480154612" />
+    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1625480154612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625480154612" />
+    <state x="672" y="188" key="SettingsEditor" timestamp="1625479906135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="188" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1625479906135" />
+    <state x="1096" y="242" width="672" height="677" key="run.anything.popup" timestamp="1625478237764">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1096" y="242" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625478237764" />
+    <state x="595" y="229" key="search.everywhere.popup" timestamp="1625479624013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="229" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625479624013" />
+  </component>
+</project>
