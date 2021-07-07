@@ -10,20 +10,19 @@ uniqueConstraints = {
         @UniqueConstraint(name="student_email_unique",columnNames = "email")
 })
 public class Student {
-    public Student() {
-    }
+   // public Student() {
+   // }
 
     @Id
-    @SequenceGenerator(name="student_sequence",sequenceName = "student_sequence",
-    allocationSize = 1)
+   // @SequenceGenerator(name="student_sequence",sequenceName = "student_sequence",
+   // allocationSize = 1)
     @GeneratedValue(
-            strategy = SEQUENCE,
-            generator = "student_sequence"
+            strategy = GenerationType.IDENTITY
     )
-    @Column(
+   /* @Column(
             name="id",
             updatable = false
-    )
+    )*/
     private Long id;
     @Column(
             name="first_name",
@@ -50,16 +49,15 @@ public class Student {
     )
     private Integer age;
 
-    public Student(String firstName,
+    /*public Student(String firstName,
                    String lastName,
                    String email,
                    Integer age) {
-        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.age = age;
-    }
+    }*/
 
     public Long getId() {
         return id;

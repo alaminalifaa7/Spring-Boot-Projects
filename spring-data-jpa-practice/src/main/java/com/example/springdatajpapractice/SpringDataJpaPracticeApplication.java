@@ -12,12 +12,4 @@ public class SpringDataJpaPracticeApplication {
 
 		SpringApplication.run(SpringDataJpaPracticeApplication.class, args);
 	}
-
-	@Bean
-	CommandLineRunner commandLineRunner(StudentRepository studentRepository){
-		return args->{
-			Student maria = new Student("Maria","jones","maria@gmail.com",25);
-			studentRepository.save(maria);
-		};
-	}
 }

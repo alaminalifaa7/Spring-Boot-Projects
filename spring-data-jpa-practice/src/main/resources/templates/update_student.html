@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Student Management</title>
+</head>
+<body>
+<div class="container">
+    <h1>Student Management System</h1>
+    <hr>
+    <h2>Update Student</h2>
+    <form action="#" th:action="@{/saveStudent}" th:object="${student}" method="post">
+       <input type="hidden" th:field="*{id}"/>
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" th:field="*{firstName}" class="form-control mb-4 col-4" >
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" th:field="*{lastName}" class="form-control mb-4 col-4" >
+        </div>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" th:field="*{email}" class="form-control mb-4 col-4" >
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" th:field="*{age}" class="form-control mb-4 col-4" >
+        </div>
+        <button type="submit" class="btn btn-info col-2">Update Student</button>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
