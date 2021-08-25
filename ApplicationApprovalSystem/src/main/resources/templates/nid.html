@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>NID Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">NID Portal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{/logout}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-6 col-md-offset-3">
+<div  class="card" style="width: 25rem;" th:if="${applicant.approved}">
+    <img th:src="@{/images/user2.jpg}" class="img-thumbnail" alt="...">
+    <div class="card-body">
+        <h5 class="card-title" th:text="'Hi, '+${applicant.firstName}+ ' '+ ${applicant.lastName}">Card title</h5>
+        <p class="card-text" th:text="'Email Id: '+${applicant.email}"></p>
+        <h6 class="card-subtitle mb-2 text-muted" th:text="'National Id: '+${applicant.nid}" >Card subtitle</h6>
+    </div>
+</div>
+<div class="card" style="width: 25rem;" th:unless="${applicant.approved}">
+    <img th:src="@{/images/user2.jpg}" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title" th:text="'Hi, '+${applicant.firstName}+ ' '+ ${applicant.lastName}">Card title</h5>
+        <p class="card-text" th:text="'Email Id: '+${applicant.email}"></p>
+        <h6 class="card-subtitle mb-2 text-muted" >National Id: Not approved yet,come back later</h6>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

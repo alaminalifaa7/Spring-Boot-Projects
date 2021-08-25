@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <meta charset="ISO-8859-1">
-<title>Registration and Login App</title>
+<title>NID Portal</title>
 
 <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -69,8 +69,10 @@
         </div>
       </form>
       <div class="form-group">
-      <span>New user? <a href="/" th:href="@{/api/registration}">Register
-        here</a></span>
+      <!--<span>New user? <a href="/" th:href="@{/api/registration}">Register
+        here</a></span>-->
+        <span>New user? <a href="/" th:href="@{/api/registration}" class="btn btn-primary btn-lg active"
+                           role="button" aria-pressed="true">Register Here</a></span>
       </div>
     </div>
   </div>

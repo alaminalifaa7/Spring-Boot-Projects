@@ -17,6 +17,9 @@ public class ApplicantService implements UserDetailsService {
         return applicantRepository.findByEmail(email).orElseThrow(()->new UsernameNotFoundException("User Not Found FROM applicant SERVICE"));
     }
 
+    public Applicant retrieveApplicant(String email){
+       return  applicantRepository.findByEmail(email).orElseThrow(()->new UsernameNotFoundException("User Not Found FROM applicant SERVICE"));
+    }
     public String saveApplication(Applicant applicant){
         boolean applicantExists = applicantRepository.findByEmail(applicant.getEmail()).isPresent();
 

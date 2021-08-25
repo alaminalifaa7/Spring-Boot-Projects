@@ -21,7 +21,7 @@ public class RegistrationService {
                 registrationRequest.getPassword(),
                 UUID.randomUUID(),
                 ApplicantRole.USER,
-                false
+                true
         ));
      return "works from my  request to submit an application";
     }
