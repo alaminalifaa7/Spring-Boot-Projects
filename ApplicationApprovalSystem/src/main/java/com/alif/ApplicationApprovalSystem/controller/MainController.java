@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.Optional;
+
 @Controller
 @AllArgsConstructor
 public class MainController {
@@ -31,7 +34,9 @@ public class MainController {
         return "nid";
     }
     @GetMapping("/admin")
-    public String admin() {
-        return ("<h1>admin approval page </h1>");
+    public String admin(Model model) {
+        List<Applicant> applicants = applicantService.getAllApplicant();
+        model.addAttribute("applicants",applicants);
+        return "adminApproval";
     }
 }

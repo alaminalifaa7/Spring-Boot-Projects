@@ -1,11 +1,15 @@
 package com.alif.ApplicationApprovalSystem.service;
 import com.alif.ApplicationApprovalSystem.model.Applicant;
+import com.alif.ApplicationApprovalSystem.model.ApplicantRole;
 import com.alif.ApplicationApprovalSystem.repository.ApplicantRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -30,5 +34,8 @@ public class ApplicantService implements UserDetailsService {
         return "works";
     }
 
+    public List<Applicant> getAllApplicant(){
+        return applicantRepository.findApplicantByApplicantRole(ApplicantRole.USER);
+    }
 
 }

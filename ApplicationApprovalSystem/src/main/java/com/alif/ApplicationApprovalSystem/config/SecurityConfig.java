@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
@@ -37,7 +38,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login")
+                .defaultSuccessUrl("/", true)
                 .permitAll()
+                .successHandler(successHandler())
                 .and()
                 .logout()
                 .invalidateHttpSession(true)
@@ -58,5 +61,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         provider.setPasswordEncoder(passwordEncoder());
         provider.setUserDetailsService(applicantService);
         return provider;
+    }
+    @Bean
+    public AuthenticationSuccessHandler successHandler() {
+        return new CustomSuccessHandler();
     }
 }
